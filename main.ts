@@ -3,8 +3,8 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showString("Drink!")
+        music.setVolume(250)
         music.playMelody("B A B A B A B A ", 140)
     }
 })
 radio.setGroup(55)
-music.setVolume(250)
